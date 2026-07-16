@@ -1,0 +1,17 @@
+roomA = "Dirty"
+roomB = "Dirty"
+position = "A"
+
+while roomA == "Dirty" or roomB == "Dirty":
+    if position == "A":
+        if roomA == "Dirty":
+            print("Cleaning Room A")
+            roomA = "Clean"
+        position = "B"
+    else:
+        if roomB == "Dirty":
+            print("Cleaning Room B")
+            roomB = "Clean"
+        position = "A"
+
+print("Both rooms are clean.")
